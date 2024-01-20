@@ -1,0 +1,261 @@
+.App {
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+}
+
+
+.eth{
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.leftH{
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.headerItem {
+  padding: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.headerItem:hover {
+  background-color: rgb(42, 17, 60);
+  cursor: pointer;
+}
+
+.connectButton {
+  background-color:rgb(31, 1, 94);
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 100px;
+  color:rgb(105, 7, 36);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.connectButton:hover {
+  cursor: pointer;
+  color:rgb(33, 33, 62)
+}
+
+.mainWindow {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.tradeBox {
+  width: 400px;
+  background-color: rgba(28, 0, 64, 0.921);
+  border: 2px solid rgb(1, 0, 1);
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+}
+
+.cog {
+  color:rgba(134, 133, 142, 0.836);
+  transition: 0.3s;
+}
+
+.cog:hover {
+  color: rgb(0, 0, 0);
+  rotate: 90deg;
+  cursor: pointer;
+}
+
+.switchButton {
+  background-color: rgb(55, 62, 88) ;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  top: 85px;
+  left:180px;
+  color: grey;
+  border: 3px solid #0e111b;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.dollarAmount {
+  position: absolute;
+  top: 75px;
+  left: 14px;
+  font-size: 10px;
+  color: #5f6783;
+}
+
+.switchButton:hover {
+  color: rgb(136, 3, 3);
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+}
+
+.assetOne {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 135px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+.assetTwo {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 135px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetOne:hover{
+  cursor: pointer;
+}
+
+.assetTwo:hover{
+  cursor: pointer;
+}
+
+.assetLogo{
+  height: 22px;
+  margin-left: 5px;
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 19px;
+  color: rgb(35, 2, 83);
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.swapButton[disabled] {
+  background-color: rgb(103, 44, 116);
+  opacity: 0.4;
+  color: #000000;
+}
+
+.swapButton[disabled]:hover {
+  cursor: not-allowed;
+  background-color: rgb(24, 35, 175);
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: rgb(41, 35, 128);
+}
+
+.tokenLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.modalContent {
+  border-top: 1px solid #1e1484;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tokenChoice{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tokenChoice:hover {
+  cursor: pointer;
+  background-color: #78136e;
+}
+
+.tokenName {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenTicker {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color:#5f6783;
+}
